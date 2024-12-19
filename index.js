@@ -17,12 +17,6 @@ let db = mysql.createPool({
   port: process.env.MYSQL_ADDON_PORT || 3306,
   connectionLimit: 10
 });
-
-db.connect(err => {
-  if (err) throw err;
-  console.log('Conectado a MySQL');
-});
-
 //usuarios
 app.get('/api/usuarios', (req, res) => {
   db.query('SELECT * FROM usuarios', (err, results) => {
