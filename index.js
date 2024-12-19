@@ -10,10 +10,10 @@ app.use(cors());
 app.use(bodyParser.json());
 
 let db = mysql.createPool({
-  host: process.env.MYSQL_ADDON_HOST || 'bgevl8n1eimtpleki5kp-mysql.services.clever-cloud.com',
-  user: process.env.MYSQL_ADDON_USER || 'uuzo2lti9q2ygr7z',
-  password: process.env.MYSQL_ADDON_PASSWORD || 'mwJ2vtQiLQFnR7F797Mv',
-  database: process.env.MYSQL_ADDON_DB || 'bgevl8n1eimtpleki5kp',
+  host: process.env.MYSQL_ADDON_HOST || 'bechyxubqvm8tbl7pz0r-mysql.services.clever-cloud.com',
+  user: process.env.MYSQL_ADDON_USER || 'ujsb4cleyqujsyzd',
+  password: process.env.MYSQL_ADDON_PASSWORD || 'PFNH3WyziFPk9YXH0gQ2',
+  database: process.env.MYSQL_ADDON_DB || 'bechyxubqvm8tbl7pz0r',
   port: process.env.MYSQL_ADDON_PORT || 3306,
   connectionLimit: 10
 });
